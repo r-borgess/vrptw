@@ -1,0 +1,916 @@
+{
+  "name": "C106",
+  "vehicle_number": 25,
+  "capacity": 200,
+  "customers": [
+    {
+      "customer_number": 0,
+      "x_coord": 40.0,
+      "y_coord": 50.0,
+      "demand": 0.0,
+      "ready_time": 0.0,
+      "due_date": 1236.0,
+      "service_time": 0.0
+    },
+    {
+      "customer_number": 1,
+      "x_coord": 45.0,
+      "y_coord": 68.0,
+      "demand": 10.0,
+      "ready_time": 890.0,
+      "due_date": 989.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 2,
+      "x_coord": 45.0,
+      "y_coord": 70.0,
+      "demand": 30.0,
+      "ready_time": 816.0,
+      "due_date": 879.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 3,
+      "x_coord": 42.0,
+      "y_coord": 66.0,
+      "demand": 10.0,
+      "ready_time": 55.0,
+      "due_date": 156.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 4,
+      "x_coord": 42.0,
+      "y_coord": 68.0,
+      "demand": 10.0,
+      "ready_time": 703.0,
+      "due_date": 806.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 5,
+      "x_coord": 42.0,
+      "y_coord": 65.0,
+      "demand": 10.0,
+      "ready_time": 15.0,
+      "due_date": 60.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 6,
+      "x_coord": 40.0,
+      "y_coord": 69.0,
+      "demand": 20.0,
+      "ready_time": 559.0,
+      "due_date": 764.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 7,
+      "x_coord": 40.0,
+      "y_coord": 66.0,
+      "demand": 20.0,
+      "ready_time": 172.0,
+      "due_date": 223.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 8,
+      "x_coord": 38.0,
+      "y_coord": 68.0,
+      "demand": 20.0,
+      "ready_time": 250.0,
+      "due_date": 329.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 9,
+      "x_coord": 38.0,
+      "y_coord": 70.0,
+      "demand": 10.0,
+      "ready_time": 489.0,
+      "due_date": 650.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 10,
+      "x_coord": 35.0,
+      "y_coord": 66.0,
+      "demand": 10.0,
+      "ready_time": 361.0,
+      "due_date": 406.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 11,
+      "x_coord": 35.0,
+      "y_coord": 69.0,
+      "demand": 10.0,
+      "ready_time": 450.0,
+      "due_date": 503.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 12,
+      "x_coord": 25.0,
+      "y_coord": 85.0,
+      "demand": 20.0,
+      "ready_time": 647.0,
+      "due_date": 726.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 13,
+      "x_coord": 22.0,
+      "y_coord": 75.0,
+      "demand": 30.0,
+      "ready_time": 30.0,
+      "due_date": 95.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 14,
+      "x_coord": 22.0,
+      "y_coord": 85.0,
+      "demand": 10.0,
+      "ready_time": 571.0,
+      "due_date": 616.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 15,
+      "x_coord": 20.0,
+      "y_coord": 80.0,
+      "demand": 40.0,
+      "ready_time": 392.0,
+      "due_date": 421.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 16,
+      "x_coord": 20.0,
+      "y_coord": 85.0,
+      "demand": 40.0,
+      "ready_time": 478.0,
+      "due_date": 525.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 17,
+      "x_coord": 18.0,
+      "y_coord": 75.0,
+      "demand": 20.0,
+      "ready_time": 105.0,
+      "due_date": 142.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 18,
+      "x_coord": 15.0,
+      "y_coord": 75.0,
+      "demand": 20.0,
+      "ready_time": 172.0,
+      "due_date": 261.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 19,
+      "x_coord": 15.0,
+      "y_coord": 80.0,
+      "demand": 10.0,
+      "ready_time": 274.0,
+      "due_date": 349.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 20,
+      "x_coord": 30.0,
+      "y_coord": 50.0,
+      "demand": 10.0,
+      "ready_time": 10.0,
+      "due_date": 77.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 21,
+      "x_coord": 30.0,
+      "y_coord": 52.0,
+      "demand": 20.0,
+      "ready_time": 918.0,
+      "due_date": 961.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 22,
+      "x_coord": 28.0,
+      "y_coord": 52.0,
+      "demand": 20.0,
+      "ready_time": 806.0,
+      "due_date": 889.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 23,
+      "x_coord": 28.0,
+      "y_coord": 55.0,
+      "demand": 10.0,
+      "ready_time": 739.0,
+      "due_date": 770.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 24,
+      "x_coord": 25.0,
+      "y_coord": 50.0,
+      "demand": 10.0,
+      "ready_time": 55.0,
+      "due_date": 154.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 25,
+      "x_coord": 25.0,
+      "y_coord": 52.0,
+      "demand": 40.0,
+      "ready_time": 172.0,
+      "due_date": 221.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 26,
+      "x_coord": 25.0,
+      "y_coord": 55.0,
+      "demand": 10.0,
+      "ready_time": 612.0,
+      "due_date": 711.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 27,
+      "x_coord": 23.0,
+      "y_coord": 52.0,
+      "demand": 10.0,
+      "ready_time": 264.0,
+      "due_date": 313.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 28,
+      "x_coord": 23.0,
+      "y_coord": 55.0,
+      "demand": 20.0,
+      "ready_time": 553.0,
+      "due_date": 586.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 29,
+      "x_coord": 20.0,
+      "y_coord": 50.0,
+      "demand": 10.0,
+      "ready_time": 365.0,
+      "due_date": 398.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 30,
+      "x_coord": 20.0,
+      "y_coord": 55.0,
+      "demand": 10.0,
+      "ready_time": 452.0,
+      "due_date": 501.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 31,
+      "x_coord": 10.0,
+      "y_coord": 35.0,
+      "demand": 20.0,
+      "ready_time": 204.0,
+      "due_date": 233.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 32,
+      "x_coord": 10.0,
+      "y_coord": 40.0,
+      "demand": 30.0,
+      "ready_time": 31.0,
+      "due_date": 189.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 33,
+      "x_coord": 8.0,
+      "y_coord": 40.0,
+      "demand": 40.0,
+      "ready_time": 42.0,
+      "due_date": 203.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 34,
+      "x_coord": 8.0,
+      "y_coord": 45.0,
+      "demand": 20.0,
+      "ready_time": 715.0,
+      "due_date": 852.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 35,
+      "x_coord": 5.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 251.0,
+      "due_date": 376.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 36,
+      "x_coord": 5.0,
+      "y_coord": 45.0,
+      "demand": 10.0,
+      "ready_time": 648.0,
+      "due_date": 733.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 37,
+      "x_coord": 2.0,
+      "y_coord": 40.0,
+      "demand": 20.0,
+      "ready_time": 365.0,
+      "due_date": 452.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 38,
+      "x_coord": 0.0,
+      "y_coord": 40.0,
+      "demand": 30.0,
+      "ready_time": 474.0,
+      "due_date": 527.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 39,
+      "x_coord": 0.0,
+      "y_coord": 45.0,
+      "demand": 20.0,
+      "ready_time": 541.0,
+      "due_date": 650.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 40,
+      "x_coord": 35.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 240.0,
+      "due_date": 345.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 41,
+      "x_coord": 35.0,
+      "y_coord": 32.0,
+      "demand": 10.0,
+      "ready_time": 123.0,
+      "due_date": 278.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 42,
+      "x_coord": 33.0,
+      "y_coord": 32.0,
+      "demand": 20.0,
+      "ready_time": 19.0,
+      "due_date": 225.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 43,
+      "x_coord": 33.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 16.0,
+      "due_date": 153.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 44,
+      "x_coord": 32.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 338.0,
+      "due_date": 433.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 45,
+      "x_coord": 30.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 513.0,
+      "due_date": 628.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 46,
+      "x_coord": 30.0,
+      "y_coord": 32.0,
+      "demand": 30.0,
+      "ready_time": 415.0,
+      "due_date": 542.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 47,
+      "x_coord": 30.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 872.0,
+      "due_date": 1127.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 48,
+      "x_coord": 28.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 599.0,
+      "due_date": 726.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 49,
+      "x_coord": 28.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 917.0,
+      "due_date": 1126.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 50,
+      "x_coord": 26.0,
+      "y_coord": 32.0,
+      "demand": 10.0,
+      "ready_time": 779.0,
+      "due_date": 916.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 51,
+      "x_coord": 25.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 695.0,
+      "due_date": 816.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 52,
+      "x_coord": 25.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 857.0,
+      "due_date": 1024.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 53,
+      "x_coord": 44.0,
+      "y_coord": 5.0,
+      "demand": 20.0,
+      "ready_time": 221.0,
+      "due_date": 412.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 54,
+      "x_coord": 42.0,
+      "y_coord": 10.0,
+      "demand": 40.0,
+      "ready_time": 96.0,
+      "due_date": 347.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 55,
+      "x_coord": 42.0,
+      "y_coord": 15.0,
+      "demand": 10.0,
+      "ready_time": 35.0,
+      "due_date": 233.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 56,
+      "x_coord": 40.0,
+      "y_coord": 5.0,
+      "demand": 30.0,
+      "ready_time": 347.0,
+      "due_date": 474.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 57,
+      "x_coord": 40.0,
+      "y_coord": 15.0,
+      "demand": 40.0,
+      "ready_time": 35.0,
+      "due_date": 172.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 58,
+      "x_coord": 38.0,
+      "y_coord": 5.0,
+      "demand": 30.0,
+      "ready_time": 403.0,
+      "due_date": 602.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 59,
+      "x_coord": 38.0,
+      "y_coord": 15.0,
+      "demand": 10.0,
+      "ready_time": 521.0,
+      "due_date": 870.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 60,
+      "x_coord": 35.0,
+      "y_coord": 5.0,
+      "demand": 20.0,
+      "ready_time": 487.0,
+      "due_date": 704.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 61,
+      "x_coord": 50.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 422.0,
+      "due_date": 719.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 62,
+      "x_coord": 50.0,
+      "y_coord": 35.0,
+      "demand": 20.0,
+      "ready_time": 217.0,
+      "due_date": 362.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 63,
+      "x_coord": 50.0,
+      "y_coord": 40.0,
+      "demand": 50.0,
+      "ready_time": 142.0,
+      "due_date": 247.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 64,
+      "x_coord": 48.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 567.0,
+      "due_date": 758.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 65,
+      "x_coord": 48.0,
+      "y_coord": 40.0,
+      "demand": 10.0,
+      "ready_time": 34.0,
+      "due_date": 171.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 66,
+      "x_coord": 47.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 794.0,
+      "due_date": 907.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 67,
+      "x_coord": 47.0,
+      "y_coord": 40.0,
+      "demand": 10.0,
+      "ready_time": 12.0,
+      "due_date": 226.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 68,
+      "x_coord": 45.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 716.0,
+      "due_date": 795.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 69,
+      "x_coord": 45.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 873.0,
+      "due_date": 1012.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 70,
+      "x_coord": 95.0,
+      "y_coord": 30.0,
+      "demand": 30.0,
+      "ready_time": 266.0,
+      "due_date": 577.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 71,
+      "x_coord": 95.0,
+      "y_coord": 35.0,
+      "demand": 20.0,
+      "ready_time": 181.0,
+      "due_date": 472.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 72,
+      "x_coord": 53.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 402.0,
+      "due_date": 553.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 73,
+      "x_coord": 92.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 345.0,
+      "due_date": 684.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 74,
+      "x_coord": 53.0,
+      "y_coord": 35.0,
+      "demand": 50.0,
+      "ready_time": 294.0,
+      "due_date": 471.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 75,
+      "x_coord": 45.0,
+      "y_coord": 65.0,
+      "demand": 20.0,
+      "ready_time": 951.0,
+      "due_date": 1114.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 76,
+      "x_coord": 90.0,
+      "y_coord": 35.0,
+      "demand": 10.0,
+      "ready_time": 153.0,
+      "due_date": 310.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 77,
+      "x_coord": 88.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 450.0,
+      "due_date": 767.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 78,
+      "x_coord": 88.0,
+      "y_coord": 35.0,
+      "demand": 20.0,
+      "ready_time": 50.0,
+      "due_date": 237.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 79,
+      "x_coord": 87.0,
+      "y_coord": 30.0,
+      "demand": 10.0,
+      "ready_time": 567.0,
+      "due_date": 832.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 80,
+      "x_coord": 85.0,
+      "y_coord": 25.0,
+      "demand": 10.0,
+      "ready_time": 713.0,
+      "due_date": 876.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 81,
+      "x_coord": 85.0,
+      "y_coord": 35.0,
+      "demand": 30.0,
+      "ready_time": 47.0,
+      "due_date": 331.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 82,
+      "x_coord": 75.0,
+      "y_coord": 55.0,
+      "demand": 20.0,
+      "ready_time": 311.0,
+      "due_date": 478.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 83,
+      "x_coord": 72.0,
+      "y_coord": 55.0,
+      "demand": 10.0,
+      "ready_time": 127.0,
+      "due_date": 476.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 84,
+      "x_coord": 70.0,
+      "y_coord": 58.0,
+      "demand": 20.0,
+      "ready_time": 349.0,
+      "due_date": 632.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 85,
+      "x_coord": 68.0,
+      "y_coord": 60.0,
+      "demand": 30.0,
+      "ready_time": 476.0,
+      "due_date": 691.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 86,
+      "x_coord": 66.0,
+      "y_coord": 55.0,
+      "demand": 10.0,
+      "ready_time": 67.0,
+      "due_date": 344.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 87,
+      "x_coord": 65.0,
+      "y_coord": 55.0,
+      "demand": 20.0,
+      "ready_time": 25.0,
+      "due_date": 256.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 88,
+      "x_coord": 65.0,
+      "y_coord": 60.0,
+      "demand": 30.0,
+      "ready_time": 546.0,
+      "due_date": 807.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 89,
+      "x_coord": 63.0,
+      "y_coord": 58.0,
+      "demand": 10.0,
+      "ready_time": 630.0,
+      "due_date": 909.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 90,
+      "x_coord": 60.0,
+      "y_coord": 55.0,
+      "demand": 10.0,
+      "ready_time": 20.0,
+      "due_date": 293.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 91,
+      "x_coord": 60.0,
+      "y_coord": 60.0,
+      "demand": 10.0,
+      "ready_time": 769.0,
+      "due_date": 956.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 92,
+      "x_coord": 67.0,
+      "y_coord": 85.0,
+      "demand": 20.0,
+      "ready_time": 229.0,
+      "due_date": 580.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 93,
+      "x_coord": 65.0,
+      "y_coord": 85.0,
+      "demand": 40.0,
+      "ready_time": 442.0,
+      "due_date": 551.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 94,
+      "x_coord": 65.0,
+      "y_coord": 82.0,
+      "demand": 10.0,
+      "ready_time": 227.0,
+      "due_date": 394.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 95,
+      "x_coord": 62.0,
+      "y_coord": 80.0,
+      "demand": 30.0,
+      "ready_time": 163.0,
+      "due_date": 272.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 96,
+      "x_coord": 60.0,
+      "y_coord": 80.0,
+      "demand": 10.0,
+      "ready_time": 36.0,
+      "due_date": 291.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 97,
+      "x_coord": 60.0,
+      "y_coord": 85.0,
+      "demand": 30.0,
+      "ready_time": 469.0,
+      "due_date": 714.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 98,
+      "x_coord": 58.0,
+      "y_coord": 75.0,
+      "demand": 20.0,
+      "ready_time": 30.0,
+      "due_date": 227.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 99,
+      "x_coord": 55.0,
+      "y_coord": 80.0,
+      "demand": 10.0,
+      "ready_time": 595.0,
+      "due_date": 968.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 100,
+      "x_coord": 55.0,
+      "y_coord": 85.0,
+      "demand": 20.0,
+      "ready_time": 493.0,
+      "due_date": 880.0,
+      "service_time": 90.0
+    }
+  ]
+}

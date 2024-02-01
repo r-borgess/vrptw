@@ -1,0 +1,106 @@
+{
+  "name": "C101",
+  "vehicle_number": 25,
+  "capacity": 200,
+  "customers": [
+    {
+      "customer_number": 0,
+      "x_coord": 40.0,
+      "y_coord": 50.0,
+      "demand": 0.0,
+      "ready_time": 0.0,
+      "due_date": 1236.0,
+      "service_time": 0.0
+    },
+    {
+      "customer_number": 1,
+      "x_coord": 45.0,
+      "y_coord": 68.0,
+      "demand": 10.0,
+      "ready_time": 912.0,
+      "due_date": 967.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 2,
+      "x_coord": 45.0,
+      "y_coord": 70.0,
+      "demand": 30.0,
+      "ready_time": 825.0,
+      "due_date": 870.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 3,
+      "x_coord": 42.0,
+      "y_coord": 66.0,
+      "demand": 10.0,
+      "ready_time": 65.0,
+      "due_date": 146.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 4,
+      "x_coord": 42.0,
+      "y_coord": 68.0,
+      "demand": 10.0,
+      "ready_time": 727.0,
+      "due_date": 782.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 5,
+      "x_coord": 42.0,
+      "y_coord": 65.0,
+      "demand": 10.0,
+      "ready_time": 15.0,
+      "due_date": 67.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 6,
+      "x_coord": 40.0,
+      "y_coord": 69.0,
+      "demand": 20.0,
+      "ready_time": 621.0,
+      "due_date": 702.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 7,
+      "x_coord": 40.0,
+      "y_coord": 66.0,
+      "demand": 20.0,
+      "ready_time": 170.0,
+      "due_date": 225.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 8,
+      "x_coord": 38.0,
+      "y_coord": 68.0,
+      "demand": 20.0,
+      "ready_time": 255.0,
+      "due_date": 324.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 9,
+      "x_coord": 38.0,
+      "y_coord": 70.0,
+      "demand": 10.0,
+      "ready_time": 534.0,
+      "due_date": 605.0,
+      "service_time": 90.0
+    },
+    {
+      "customer_number": 10,
+      "x_coord": 35.0,
+      "y_coord": 66.0,
+      "demand": 10.0,
+      "ready_time": 357.0,
+      "due_date": 410.0,
+      "service_time": 90.0
+    }
+  ]
+}
