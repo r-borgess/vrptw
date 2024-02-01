@@ -58,4 +58,4 @@ Contributions to the VRPTW Solver project are welcome. Please follow the standar
 
 ## License
 
-Specify your project's license here. If you haven't decided on one, [MIT](https://opensource.org/licenses/MIT) or [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) are good choices for open-source projects.
+GNU General Public License v3.0
