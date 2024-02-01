@@ -1,16 +1,16 @@
-# This is a sample Python script.
+from src.distance_matrix import DistanceMatrixSingleton
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Example customers list
+customers = [
+    {"customer_number": 0, "x_coord": 40.0, "y_coord": 50.0},
+    {"customer_number": 1, "x_coord": 45.0, "y_coord": 68.0},
+    # Add more customers as needed...
+]
 
+# Initialize the distance matrix
+distance_matrix_singleton = DistanceMatrixSingleton(customers)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Access the distance matrix
+distance_matrix = distance_matrix_singleton.get_distance_matrix()
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(distance_matrix)
