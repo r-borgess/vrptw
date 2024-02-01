@@ -8,6 +8,9 @@ class Customer:
         self.due_date = due_date
         self.service_time = service_time
 
+    def __repr__(self):
+        return f"Customer({self.customer_number}, Demand: {self.demand}, Due: {self.due_date})"
+
 class Fleet:
     def __init__(self, total_vehicles, vehicle_capacity):
         self.total_vehicles = total_vehicles
