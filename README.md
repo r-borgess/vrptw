@@ -3,9 +3,14 @@
 
 ## Overview
 
-This project provides a solution framework for the Vehicle Routing Problem with Time Windows (VRPTW). It includes an implementation of Insertion Heuristics for generating initial routes and a visualization module for plotting those routes.
+This project provides a solution framework for the Vehicle Routing Problem with Time Windows (VRPTW) by Heuristic-based route construction and Metaheuristics refinement.
 
 ---
+
+## Features
+- **Insertion Heuristic**: A flexible and efficient strategy for route optimization, considering distance and time constraints.
+- **Solver Factory**: Facilitates easy switching between different solving strategies, including the newly added Insertion Heuristic.
+- **Enhanced Route Management**: The `Route` model supports dynamic customer insertion, automatically recalculating total demand and distance.
 
 # VRPTW Solver
 
