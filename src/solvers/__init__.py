@@ -1,19 +1,15 @@
-from src.solvers.greedy_solver import GreedySolver
-from src.solvers.insertion_heuristic import InsertionHeuristic
-from src.solvers.random_solver import RandomSolver
-
+from .greedy_solver import GreedySolver
+from .insertion_heuristic import InsertionHeuristic
+from .random_solver import RandomSolver
 
 class SolverFactory:
-    _solvers = {
-        "greedy": GreedySolver,
-        "insertion": InsertionHeuristic,
-        "random": RandomSolver
-    }
-
     @staticmethod
-    def get_solver(solver_type):
-        try:
-            return SolverFactory._solvers[solver_type]()
-        except KeyError:
-            raise ValueError(f"Unknown solver type: {solver_type}")
-
+    def get_solver(solver_type, **kwargs):
+        if solver_type == "greedy":
+            return GreedySolver(**kwargs)
+        elif solver_type == "insertion":
+            return InsertionHeuristic(**kwargs)
+        elif solver_type == "random":
+            return RandomSolver(**kwargs)
+        else:
+            raise ValueError("Unknown solver type")
