@@ -5,12 +5,6 @@
 
 This project provides a solution framework for the Vehicle Routing Problem with Time Windows (VRPTW). It includes an implementation of Insertion Heuristics for generating initial routes and a visualization module for plotting those routes.
 
-The current `README.md` provides an overview of the VRPTW Solver project, mentioning its purpose, the inclusion of Insertion Heuristics, and a visualization module for plotting routes. It also outlines the project structure, highlighting the main components and their roles.
-
-### Updated README.md Content
-
-To reflect the additions and changes made today, including the introduction of a `SolverFactory`, the organization of solvers into the `solvers` directory, and the implementation of `ProblemInstance` and `Solution` classes, the `README.md` needs to be updated accordingly. Below is an updated version of the README content, incorporating these elements:
-
 ---
 
 # VRPTW Solver
