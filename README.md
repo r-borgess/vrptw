@@ -61,7 +61,7 @@ To add new solver algorithms, implement the solver class in `src/solvers/`, ensu
 2. Install required Python packages:
 
 ```bash
-pip install numpy matplotlib
+pip install numpy plotly
 ```
 
 3. Place your problem instance JSON files in the `data/` directory.
