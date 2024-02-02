@@ -5,27 +5,55 @@
 
 This project provides a solution framework for the Vehicle Routing Problem with Time Windows (VRPTW). It includes an implementation of Insertion Heuristics for generating initial routes and a visualization module for plotting those routes.
 
+---
+
+# VRPTW Solver
+
+## Overview
+
+This project provides a comprehensive solution framework for the Vehicle Routing Problem with Time Windows (VRPTW). It features a variety of solving strategies, including Greedy, Insertion Heuristic, and Random solvers, alongside a robust visualization module for plotting routes. Our approach allows for flexible problem solving and analysis, facilitating the exploration of different algorithms' effectiveness.
+
 ## Project Structure
 
 ```
 vrptw_solver/
 │
-├── data/
-│   └── instance.json             # JSON file(s) with problem instances
+├── data/                          # Contains JSON-formatted problem instances
+│   └── instance.json
 │
-├── src/
+├── src/                           # Source code directory
 │   ├── __init__.py
-│   ├── distance_matrix.py        # Module for distance matrix calculation and singleton
-│   ├── models.py                 # Definitions for Customer, Vehicle, and other domain models
-│   ├── solvers/
+│   ├── distance_matrix.py         # Manages distance matrix calculations
+│   ├── utils.py                   # Includes data loading utilities
+│   ├── view.py                    # Provides visualization capabilities
+│   │
+│   ├── models/                    # Data models for customers, fleet, routes, and more
 │   │   ├── __init__.py
-│   │   ├── base_solver.py        # Base class for solvers
-│   │   └── insertion_heuristic.py# Insertion heuristic solver implementation
-│   ├── utils.py                  # Utility functions, e.g., data loading
-│   └── view.py          # Visualization of routes and data
+│   │   ├── customer.py
+│   │   ├── fleet.py
+│   │   ├── problem_instance.py
+│   │   ├── route.py
+│   │   └── solution.py
+│   │
+│   └── solvers/                   # Solver algorithms
+│       ├── __init__.py            # Contains SolverFactory for dynamic solver selection
+│       ├── base_solver.py         # Base class for solver implementations
+│       ├── greedy_solver.py       # Greedy algorithm solver
+│       ├── insertion_heuristic.py # Insertion heuristic solver
+│       └── random_solver.py       # Random solver for benchmarking and testing
 │
-└── main.py                       # Main script to run solvers
+└── main.py                        # Main executable script
 ```
+
+## Solver Factory
+
+The `SolverFactory` in `src/solvers/__init__.py` allows for easy selection among different solver strategies based on their names. Supported solvers are "greedy", "insertion", and "random". This flexibility enables quick comparisons and benchmarking across various algorithms.
+
+## Extending the Solver
+
+To add new solver algorithms, implement the solver class in `src/solvers/`, ensuring it inherits from `BaseSolver` and implements the required methods. Register the new solver in the `SolverFactory` for seamless integration.
+
+---
 
 ## Setup
 
@@ -33,13 +61,14 @@ vrptw_solver/
 2. Install required Python packages:
 
 ```bash
-pip install numpy matplotlib
+pip install numpy plotly
 ```
 
 3. Place your problem instance JSON files in the `data/` directory.
 
 ## Usage
 
+You can specify the solver type dynamically via the `SolverFactory` interface.
 To run the solver with a problem instance, execute the `main.py` script:
 
 ```bash
