@@ -7,6 +7,11 @@ This project provides a solution framework for the Vehicle Routing Problem with 
 
 ---
 
+## Features
+- **Insertion Heuristic**: A flexible and efficient strategy for route optimization, considering distance and time constraints.
+- **Solver Factory**: Facilitates easy switching between different solving strategies, including the newly added Insertion Heuristic.
+- **Enhanced Route Management**: The `Route` model supports dynamic customer insertion, automatically recalculating total demand and distance.
+
 # VRPTW Solver
 
 ## Overview
