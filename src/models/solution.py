@@ -3,5 +3,4 @@ class Solution:
         self.routes = routes
 
     def evaluate(self):
-        # Implement evaluation logic, e.g., total distance, cost, etc.
         pass

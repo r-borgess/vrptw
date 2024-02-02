@@ -1,5 +1,6 @@
 import json
-from src.models import Customer, Fleet
+from src.models.customer import Customer
+from src.models.fleet import Fleet
 
 
 def load_problem_instance(file_path):
