@@ -57,13 +57,55 @@ vrptw_solver/
 └── main.py                        # Main executable script for running the VRPTW solver with various configurations.
 ```
 
-## Solver Factory
+To update your README with information about the Solver Factory and extending the solver to include the new metaheuristic module, I'll draft sections that incorporate these updates. These revisions aim to reflect the enhanced capabilities of your project, emphasizing how users can leverage the Solver Factory for dynamic solver selection, including the use of metaheuristics for solution optimization.
 
-The `SolverFactory` in `src/solvers/__init__.py` allows for easy selection among different solver strategies based on their names. Supported solvers are "greedy", "insertion", and "random". This flexibility enables quick comparisons and benchmarking across various algorithms.
+### The Solver Factory
 
-## Extending the Solver
+It is designed to dynamically instantiate solvers based on the specified solving strategy. With the recent introduction of the metaheuristic module, the factory now also supports the combination of constructive heuristics with advanced metaheuristic optimization techniques. This enhancement allows for a more versatile approach to solving the VRPTW, enabling users to not only generate initial solutions using heuristics like Greedy, Insertion, or Random algorithms but also refine these solutions with metaheuristics such as Tabu Search, Genetic Algorithm, and GRASP.
 
-To add new solver algorithms, implement the solver class in `src/solvers/`, ensuring it inherits from `BaseSolver` and implements the required methods. Register the new solver in the `SolverFactory` for seamless integration.
+To use the Solver Factory, specify the desired solver type and, optionally, a metaheuristic for solution refinement. The factory will return a solver instance configured according to these specifications. For example:
+
+```python
+from src.solvers import SolverFactory
+
+# Instantiate a solver with Tabu Search optimization
+solver = SolverFactory.get_solver(solver_type="insertion", metaheuristic="tabu_search", **kwargs)
+```
+
+### Extending the Factory
+
+Extending the VRPTW solvers list to incorporate new solving strategies or optimization techniques is straightforward, thanks to the modular design of the project. To add a new solver or metaheuristic:
+
+1. **Adding a New Solver**:
+   - Implement the new solver in the `src/solvers/` directory.
+   - Ensure it extends the `BaseSolver` class and implements the `solve` method.
+   - Register the new solver in the `SolverFactory` by adding a corresponding condition to the `get_solver` method.
+
+2. **Adding a New Metaheuristic**:
+   - Implement the metaheuristic in the `src/metaheuristics/` directory.
+   - If applicable, extend the `MetaheuristicSolver` base class to leverage common functionalities.
+   - Integrate the metaheuristic with the Solver Factory by updating the `combine_with_metaheuristic` method to recognize and correctly instantiate the new metaheuristic.
+
+Example of adding a new metaheuristic:
+
+```python
+# Inside src/metaheuristics/new_metaheuristic.py
+from .metaheuristic_solver import MetaheuristicSolver
+
+class NewMetaheuristic(MetaheuristicSolver):
+    def optimize(self, initial_solution, problem_instance):
+        # Implementation of the optimization process
+        pass
+```
+
+Then, update the `SolverFactory` to handle the new metaheuristic:
+
+```python
+# Modification in src/solvers/__init__.py within the SolverFactory
+
+elif metaheuristic_type == "new_metaheuristic":
+    return NewMetaheuristicOptimizer(base_solver, **kwargs)
+```
 
 ---
 
