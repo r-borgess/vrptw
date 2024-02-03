@@ -6,7 +6,7 @@ from src.view import plot_routes
 
 def main():
     # Load problem instance data
-    file_path = 'data/C102.json'
+    file_path = 'data/C101.json'
     customers, fleet = load_problem_instance(file_path)
 
     # Initialize the problem instance

@@ -71,8 +71,7 @@ class InsertionHeuristic(BaseSolver):
         for route in routes:
             for position in range(len(route.customers) + 1):
                 # Now passing distance_matrix to check_time_window_violation
-                if not self.check_capacity_violation(route, customer) and \
-                        not self.check_time_window_violation(route, customer, position, self.distance_matrix):
+                if not self.check_capacity_violation(route, customer):
                     increase = self.calculate_distance_increase(route, customer, position)
 
                     if increase < best_increase:
