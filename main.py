@@ -6,7 +6,7 @@ from src.view import plot_routes
 
 def main():
     # Load problem instance data
-    file_path = 'data/R101.json'
+    file_path = 'data/C102.json'
     customers, fleet = load_problem_instance(file_path)
 
     # Initialize the problem instance
@@ -16,17 +16,22 @@ def main():
                           problem_instance.customers}
 
     # Initialize or load your distance matrix
-    DistanceMatrixSingleton(customers)
+    DistanceMatrixSingleton(customers)  # Ensure this matches the singleton's method signature
     distance_matrix = DistanceMatrixSingleton.get_distance_matrix()
 
-    # Select the solver type dynamically, e.g., based on user input or configuration
-    solver_type = "insertion"  # This could be parameterized as needed
-
-    # Instantiate the solver using the Solver Factory
-    solver = SolverFactory.get_solver(solver_type, distance_matrix=distance_matrix, vehicle_capacity=fleet.vehicle_capacity, alpha1=1, alpha2=1, mu=1, lambda_weight=10)
+    # Instantiate the solver using the Solver Factory, adjust parameters as necessary
+    solver = SolverFactory.get_solver("insertion", distance_matrix=distance_matrix, fleet=fleet)
 
     # Solve the problem
     solution = solver.solve(problem_instance)
+
+    # Evaluate the solution
+    evaluation_metrics = solver.evaluate_solution(solution, distance_matrix)
+
+    # Print evaluation metrics
+    print("Solution Evaluation:")
+    for metric, value in evaluation_metrics.items():
+        print(f"{metric}: {value}")
 
     # Call the visualization function
     plot_routes(solution, customer_locations, depot_location=customer_locations[0])
