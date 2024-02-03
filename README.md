@@ -23,31 +23,38 @@ This project provides a comprehensive solution framework for the Vehicle Routing
 ```
 vrptw_solver/
 │
-├── data/                          # Contains JSON-formatted problem instances
-│   └── instance.json
+├── data/                          # Contains JSON-formatted problem instances.
+│   └── instance.json              # Example problem instance file.
 │
-├── src/                           # Source code directory
-│   ├── __init__.py
-│   ├── distance_matrix.py         # Manages distance matrix calculations
-│   ├── utils.py                   # Includes data loading utilities
-│   ├── view.py                    # Provides visualization capabilities
+├── src/                           # Source code directory for all solver components.
+│   ├── __init__.py                # Initializes the src package, allowing for relative imports.
+│   ├── distance_matrix.py         # Manages distance matrix calculations essential for solving VRPTW.
+│   ├── utils.py                   # Includes utility functions for data loading and other common tasks.
+│   ├── view.py                    # Provides visualization capabilities for solutions using graphical plots.
 │   │
-│   ├── models/                    # Data models for customers, fleet, routes, and more
-│   │   ├── __init__.py
-│   │   ├── customer.py
-│   │   ├── fleet.py
-│   │   ├── problem_instance.py
-│   │   ├── route.py
-│   │   └── solution.py
+│   ├── models/                    # Data models directory for representing entities such as customers and fleet.
+│   │   ├── __init__.py            # Initializes the models package.
+│   │   ├── customer.py            # Defines the Customer model with properties like demand and time windows.
+│   │   ├── fleet.py               # Defines the Fleet model, including vehicle capacity and management methods.
+│   │   ├── problem_instance.py    # Represents a VRPTW problem instance, linking customers and fleet.
+│   │   ├── route.py               # Represents a single route, including the sequence of customers.
+│   │   └── solution.py            # Represents a solution to a VRPTW instance, comprising multiple routes.
 │   │
-│   └── solvers/                   # Solver algorithms
-│       ├── __init__.py            # Contains SolverFactory for dynamic solver selection
-│       ├── base_solver.py         # Base class for solver implementations
-│       ├── greedy_solver.py       # Greedy algorithm solver
-│       ├── insertion_heuristic.py # Insertion heuristic solver
-│       └── random_solver.py       # Random solver for benchmarking and testing
+│   ├── solvers/                   # Solvers directory for different VRPTW solving algorithms.
+│   │   ├── __init__.py            # Contains SolverFactory for dynamic solver instantiation based on type.
+│   │   ├── base_solver.py         # Base class for solver implementations, defining the common solver interface.
+│   │   ├── greedy_solver.py       # Greedy algorithm solver implementation.
+│   │   ├── insertion_heuristic.py # Insertion heuristic solver for constructing initial solutions.
+│   │   └── random_solver.py       # Random solver for benchmarking and testing.
+│   │
+│   └── metaheuristics/            # Metaheuristics directory for advanced solution optimization techniques.
+│       ├── __init__.py            # Initializes the metaheuristics package.
+│       ├── metaheuristic_solver.py # Base class for metaheuristic solvers, defining the common interface.
+│       ├── tabu_search.py         # Tabu Search metaheuristic implementation.
+│       ├── genetic_algorithm.py   # Genetic Algorithm metaheuristic implementation.
+│       └── grasp.py               # GRASP (Greedy Randomized Adaptive Search Procedure) implementation.
 │
-└── main.py                        # Main executable script
+└── main.py                        # Main executable script for running the VRPTW solver with various configurations.
 ```
 
 ## Solver Factory
