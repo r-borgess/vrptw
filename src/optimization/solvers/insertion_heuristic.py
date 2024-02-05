@@ -1,8 +1,8 @@
 from src.models.problem_instance import ProblemInstance
 from src.models.solution import Solution
-from src.solvers.base_solver import BaseSolver
+from src.optimization.solvers.base_solver import BaseSolver
 from src.models.route import Route
-from src.models.fleet import Fleet
+
 
 class InsertionHeuristic(BaseSolver):
     def __init__(self, distance_matrix, fleet):

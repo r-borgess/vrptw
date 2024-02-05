@@ -1,4 +1,4 @@
-from src.solvers.base_solver import BaseSolver
+from src.optimization.solvers.base_solver import BaseSolver
 
 class RandomSolver(BaseSolver):
     def solve(self, problem_instance):

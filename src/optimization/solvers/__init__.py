@@ -1,11 +1,11 @@
 # Adjust the import paths based on your project structure
-from .solvers.greedy_solver import GreedySolver
-from .solvers.insertion_heuristic import InsertionHeuristic
-from .solvers.random_solver import RandomSolver
+from src.optimization.solvers.greedy_solver import GreedySolver
+from src.optimization.solvers.insertion_heuristic import InsertionHeuristic
+from src.optimization.solvers.random_solver import RandomSolver
 # Import metaheuristic classes
-from .metaheuristics.tabu_search import TabuSearch
-from .metaheuristics.genetic_algorithm import GeneticAlgorithm
-from .metaheuristics.grasp import GRASP
+from src.optimization.metaheuristics.tabu_search import TabuSearch
+from src.optimization.metaheuristics.genetic_algorithm import GeneticAlgorithm
+from src.optimization.metaheuristics.grasp import GRASP
 
 class SolverFactory:
     @staticmethod

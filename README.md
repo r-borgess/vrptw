@@ -62,7 +62,7 @@ It is designed to dynamically instantiate solvers based on the specified solving
 To use the Solver Factory, specify the desired solver type and, optionally, a metaheuristic for solution refinement. The factory will return a solver instance configured according to these specifications. For example:
 
 ```python
-from src.solvers import SolverFactory
+from src.optimization.solvers import SolverFactory
 
 # Instantiate a solver with Tabu Search optimization
 solver = SolverFactory.get_solver(solver_type="insertion", metaheuristic="tabu_search", **kwargs)
