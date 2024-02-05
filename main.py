@@ -1,8 +1,8 @@
-from src.utils import load_problem_instance
+from src.utils.general_utils import load_problem_instance
 from src.models.problem_instance import ProblemInstance
 from src.optimization.solvers import SolverFactory
 from src.distance_matrix import DistanceMatrixSingleton
-from src.view import plot_routes
+from src.view.plot import plot_routes
 
 def main():
     # Load problem instance data
